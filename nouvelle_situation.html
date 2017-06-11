@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Suivi individualisé des compétences</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<header>
+  <nav class="green lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="center">Suivi individualisé des compétences.</a>
+      <ul id="nav-mobile" class="side-nav">
+      <li><a href="espace_etudiant.html" class="waves-effect waves-blue"><i class="green-text material-icons">home</i>Espace Etudiant</a></li>
+      <li><div class="divider"></a></li>
+      <li><a href="#" class="waves-effect waves-blue"><i class="green-text material-icons">help</i>Situation professionnelle</a></li>
+      <li class="active light-green"><a href="nouvelle_situation.html" class="waves-effect waves-teal">Nouvelle situation</a></li>
+      <li><a href="gestion_situation.html" class="waves-effect waves-teal">Gestion situations</a></li>
+      <li><div class="divider"></a></li>
+      <li><a href="synthese.html" class="waves-effect waves-blue"><i class="green-text material-icons">help</i>Synthèse</a></li>
+      <li><a href="bilan_individuel.html" class="waves-effect waves-teal">Bilan individuel</a></li>
+      <li><a href="#" class="waves-effect waves-teal">Tableau de synthèse</a></li>
+      <li><div class="divider"></a></li>
+      <li><a href="#" class="waves-effect waves-blue"><i class="green-text material-icons">help</i>Divers</a></li>
+      <li><a href="sauvegarde.html" class="waves-effect waves-teal">Sauvegarde</a></li>
+      <li><a href="parametre.html" class="waves-effect waves-teal">Paramètres</a></li>
+      <li><a href="#" class="waves-effect waves-teal"><i class="green-text material-icons">feedback</i>Contact administrateur</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</header>
+<main>
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+        <ul class="tabs">
+          <li class="tab col s3 green-text lighten-1"><a class="active green-text lighten-1" target="_self" href="nouvelle_situation.html">Description</a></li>
+          <li class="tab col s2"><a class="green-text lighten-1" target="_self" href="activite.html">Activité(s)</a></li>
+          <li class="tab col s2"><a class="green-text lighten-1" target="_self" href="reformulation.html">Reformulation(s)</a></li>
+          <li class="tab col s2"><a class="green-text lighten-1" target="_self" href="production.html">Production(s)</a></li>
+          <li class="tab col s2"><a class="green-text lighten-1" target="_self" href="commentaire.html">Commentaire(s) prof.</a></li>
+        </ul>
+      </div>
+      <div id="test1" class="col s12">
+      <br />
+        <div class="row">
+          <form action="#" class="col s12">
+            <div class="row">
+              <label for="libelle">Libellé court :</label>
+              <input  id="libelle" type="text" class="validate" />
+              <br />
+              <div class="col s12 m6 l6">
+              <label for="description"><i class="material-icons prefix">mode_edit</i>Description</label>
+              <textarea name="description" id="description" class="materialize-textarea"></textarea>
+              </div>
+              <div class="col s12 m6 l6">
+              <label for="contexte"><i class="material-icons prefix">mode_edit</i>Contexte</label>
+              <textarea name="contexte" id="contexte" class="materialize-textarea"></textarea>
+              </div>
+              <div class="col l4 m4 s12">
+              <label for="localisation">Localisation :</label>
+                <select name="localisation" id="localisation">
+                  <option value="1" selected=selected>Organisation</option>
+                  <option value="2"," selected="selected">Centre de formation</option>
+                </select>
+              </div>
+              <div class="col l4 m4 s12">
+                <label for="source">Source :</label>
+                <select name="source" id="source">
+                  <option value="1">Stage 1</option>
+                  <option value="2">Stage 2</option>
+                  <option value="3">TP</option>
+                  <option value="4" selected="selected">PPE</option>
+                </select>
+              </div>
+              <div class="col l4 m4 s12">
+                <label for="cadre">Cadre :</label>
+                <select name="cadre" id="cadre">
+                  <option value="1" selected="selected">Equipe</option>
+                  <option value="2">Seul</option>
+                </select>
+              </div>
+            </div>
+            <br />
+            <div class="input-field col s12 l6">
+            <label for="datedeb">Date début :</label>
+              <input type="date" id="datedeb" class="datepicker">
+           </div>
+            <div class="input-field col l6 s12">
+            <label for="datefin">Date fin :</label>
+              <input type="date" id="datefin" class="datepicker">
+          </div>
+          <div class="row">
+           <div class="col s12 l4 m6">
+              <label for="environTechno"><i class="material-icons prefix">mode_edit</i>Environnement technologique :</label>
+              <textarea name="environTechno" id="environTechno" class="materialize-textarea"></textarea>
+              </div>
+              <div class="col s12 l4 m6">
+              <label for="moyen"><i class="material-icons prefix">mode_edit</i>Moyens :</label>
+              <textarea name="moyen" id="moyen" class="materialize-textarea"></textarea>
+              </div>
+              <div class="col s12 l4">
+              <label for="avisPersonnel"><i class="material-icons prefix">mode_edit</i>Avis personnel : </label>
+              <textarea name="avisPersonnel" id="avisPersonnel" class="materialize-textarea"></textarea>
+              </div>
+
+              <p> Est-ce une situation obligatoire ?</p>
+              <div class="col s6">
+                <input name="group1" class="with-gap" type="radio" id="test1" />
+                <label for="test1">Oui :</label>
+                </div>
+                <div class="col s6">
+                <input name="group1" class="with-gap" type="radio"  id="test2" />
+                <label for="test2">Non :</label>
+              </div>
+
+              <div class="col l3 m6 s12">
+                <input type="checkbox" id="prodSoluce" class="filled-in"></input>
+                <label for="prodSoluce">Production d'une solution logicielle et d'infrastructure</label>
+                </div>
+              <div class="col l3 m6 s12">
+                <input type="checkbox" id="incident" class="filled-in"></input>
+                <label for="incident">Prise en charge d'incidents et de demandes d'assistance</label>
+              </div>
+              <div class="col l3 m6 s12">
+                <input type="checkbox" id="document" class="filled-in"></input>
+                <label for="document">Élaboration de documents relatifs à la production et à la fourniture de services</label>
+              </div>
+              <div class="col l3 m6 s12">
+                <input type="checkbox" id="veille" class="filled-in"></input>
+                <label for="veille">Mise en place d'un dispositif de veille technologique</label>
+              </div>
+              <div class="col s12">
+              <br />
+              <br />
+                 <input type="submit" class="btn wawes-effect waves-light green center">
+              </div>
+          </form>
+        </div>
+      </div>
+  </div>
+</div>
+  
+</main>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/materialize.min.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>

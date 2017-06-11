@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Suivi individualisé des compétences</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<header>
+  <nav class="green lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="center">Suivi individualisé des compétences.</a>
+      <ul id="nav-mobile" class="side-nav">
+      <li><a href="espace_etudiant.html" class="waves-effect waves-blue"><i class="green-text material-icons">home</i>Espace Etudiant</a></li>
+      <li><div class="divider"></a></li>
+      <!-- SITUATION PROFESSIONELLE -->
+      <li><a href="aide.html#situation" class="waves-effect waves-blue"><i class="green-text material-icons">help</i>Situation professionnelle</a></li>
+      <li><a href="nouvelle_situation.html" class="waves-effect waves-teal">Nouvelle situation</a></li>
+      <li class="active light-green"><a href="gestion_situation.html" class="waves-effect waves-teal">Gestion situations</a></li>
+      <li><div class="divider"></a></li>
+      <!-- SYNTHESE -->
+      <li><a href="aide.html#synthese" class="waves-effect waves-blue"><i class="green-text material-icons">help</i>Synthèse</a></li>
+      <li><a href="bilan_individuel.html" class="waves-effect waves-teal">Bilan individuel</a></li>
+      <li><a href="" class="waves-effect waves-teal">Tableau de synthèse</a></li>
+      <li><div class="divider"></a></li>
+      <!-- DIVERS -->
+      <li><a href="aide.html#divers" class="waves-effect waves-blue"><i class="green-text material-icons">help</i>Divers</a></li>
+      <li><a href="sauvegarde.html" class="waves-effect waves-teal">Sauvegarde</a></li>
+      <li><a href="parametre.html" class="waves-effect waves-teal">Paramètres</a></li>
+      <li><a href="#" class="waves-effect waves-teal"><i class="green-text material-icons">feedback</i>Contact administrateur</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</header>
+<main>
+<div class="container">
+  <div class="row">
+      <div class="col hide-on-small-only m3 l2">
+        <ul class="section table-of-contents fixed">
+          <li><a class="active" href="#divers">Divers</a></li>
+          <li><a href="#situation">Situations</a></li>
+          <li><a href="#synthese">Synthèse</a></li>
+        </ul>
+        </div>
+    <div class="col s12 m9 l10">
+        <!-- DIVERS -->
+        <div class="divider"></div>
+        <h4 class="light" id="divers">Divers</h5>
+        <p>Ce menu permet de réaliser une sauvegarde de vos données personnelles ou de modifier vos paramètres.</p>
+        <h5 class="light">Sauvegarde</h6>
+        <p>Cet item réalise une sauvegarde de vos données personnelles au format XML. Vous devrez enregistrer sur votre clé USB ou tout autre support le fichier qui vous sera proposé. Dans la fenêtre du navigateur qui s'ouvre vous observez le contenu du fichier xml ; vous utilisez la commande "Fichier/Enregistrer sous" de votre navigateur pour réaliser l'enregistrement sur votre clé USB ou votre disque.</p>
+        <h5 class="light">Paramètres</h6>
+        <p>Cet item vous permet de rectifier ou modifier vos données personnelles (nom, prénom, adresse mél) ; le changement de mot de passe n'est effectif qu'en cochant la case correspondante.</p>
+        <a href="aide.html#sommaire">Sommaire</a>
+        <div class="divider"></div>
+        <!-- SITUATIONS -->
+        <h4 class="light" id="situation">Situations</h5>
+        <p>Ce menu permet de gérer les situations de travail que vous souhaitez faire apparaitre dans votre tableau de synthèse.</p>
+        <h5 class="light">Nouvelle situation</h6>
+        <p>Les onglets à votre disposition permettent de saisir des informations caractéristiques de la situation professionnelle. Les champs dont la présence est obligatoire sont marqués par une astérisque.
+        Le passage d'un onglet à l'autre génère un enregistrement des données saisies ou modifiées. L'interpréteur javascript doit être activé.
+        La longueur des données saisies dépend de la zone concernée et est limitée par le champ de la base de données. Le libellé court est limité à 64 caractères, les autres champs à 255 caractères.
+        Le libellé court sert d'identifiant significatif afin de faciliter la recherche ultérieure d'une situation en vue de la modifier ou de la compléter. Il sert aussi à caractériser une situation dans le tableau de synthèse.
+        Dans les champs multilignes (Description, Lieu) le nombre de caractère est limité par la base de données et non au niveau de la saisie. Les longueurs excessives seront donc tronçonnées.
+        L'enregistrement des données de chacun des onglets se fait en utilisant le bouton "Enregistrer" présent en bas chaque page ou en changeant d'onglet.</p>
+        <h5 class="light">Gestion situations</h6>
+        <p>Cet item permet de modifier une situation en cliquant sur son libellé court, ou de la supprimer en cliquant sur <em>supprimer</em> (pas définitivement à ce stade). L'interface indique si une situation est déjà validée. Un situation supprimée peut être récupérée (retour à l'état initial) ou détruite (destruction définitive).</p>
+        <a href="aide.html#sommaire">Sommaire</a>
+        <!-- SYNTHESE -->
+        <div class="divider"></div>
+        <h4 class="light" id="synthese">Synthèse</h5>
+        <p>Ce menu permet de connaitre quelles sont les activitées citées parmi celles prévues au référentiel ; idem pour les compétences.</p>
+        <p>Vous pouvez visualiser votre tableau de synthèse au format PDF.</p>
+        <p>Toutes les informations saisies ne figurent pas sur ce document.</p>
+        <a href="aide.html#sommaire">Sommaire</a>
+    </div>
+  </div>
+</div>
+  
+</main>
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <script src="./js/materialize.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

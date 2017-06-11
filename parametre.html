@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Suivi individualisé des compétences</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<header>
+  <nav class="green lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="center">Suivi individualisé des compétences.</a>
+      <ul id="nav-mobile" class="side-nav">
+      <li><a href="espace_etudiant.html" class="waves-effect waves-blue"><i class="green-text material-icons">home</i>Espace Etudiant</a></li>
+      <li><div class="divider"></a></li>
+      <li><a href="#" class="waves-effect waves-blue"><i class="green-text material-icons">help</i>Situation professionnelle</a></li>
+      <li><a href="nouvelle_situation.html" class="waves-effect waves-teal">Nouvelle situation</a></li>
+      <li><a href="gestion_situation.html" class="waves-effect waves-teal">Gestion situations</a></li>
+      <li><div class="divider"></a></li>
+      <li><a href="synthese.html" class="waves-effect waves-blue"><i class="green-text material-icons">help</i>Synthèse</a></li>
+      <li><a href="bilan_individuel.html" class="waves-effect waves-teal">Bilan individuel</a></li>
+      <li><a href="#" class="waves-effect waves-teal">Tableau de synthèse</a></li>
+      <li><div class="divider"></a></li>
+      <li><a href="#" class="waves-effect waves-blue"><i class="green-text material-icons">help</i>Divers</a></li>
+      <li><a href="sauvegarde.html" class="waves-effect waves-teal">Sauvegarde</a></li>
+      <li class="active light-green"><a href="parametre.html" class="waves-effect waves-teal">Paramètres</a></li>
+      <li><a href="#" class="waves-effect waves-teal"><i class="green-text material-icons">feedback</i>Contact administrateur</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="container">
+    <div class="row">
+        <div class="col s12">
+          <h4 class="light">Paramètres personnels</h4>
+          <p class="light">Cet onglet permet de modifier les informations concernant le compte d'accès.</p>
+        </div>
+      <form action="#"" class="col s12">
+        <div class="col s12 m6">
+          <label for="nom" id="nom"><i class="material-icons prefix">account_circle</i>Nom :</label>
+          <input type="text" id="nom" class="validate">
+        </div>
+        <div class="col s12 m6">
+          <label for="prenom" id="prenom"><i class="material-icons prefix">account_circle</i>Prenom</label>
+          <input type="text" id="prenom" class="validate">
+        </div>
+        <div class="col s12 m6">
+          <label for="email" id="email"><i class="material-icons prefix">email</i>Email :</label>
+          <input type="text" id="email" class="validate">
+        </div> 
+          <div class="col s12 m6">
+          <label for="num_ine" id="num_ine"><i class="material-icons prefix">confirmation_number</i>Numéro examen :</label>
+          <input type="text" id="num_ine" class="validate">
+        </div>
+        <div class="col s12">
+          <label for="mdp" id="mdp"><i class="material-icons prefix">enhanced_encryption</i>Mot de passe :</label>
+          <input type="text" id="mdp" class="validate">
+        </div> 
+        <div class="col s12">
+        <input type="checkbox" id="mdp_modifie">
+        <label for="mdp_modifie">Changer le mot de passe</label>
+        </div>
+        <div class="col s12">
+        <input type="submit" value="Enregistrer" class="btn wawes-effect waves-light green">
+      </form>
+    </div>
+  </div>
+  
+</main>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/materialize.min.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>

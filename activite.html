@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Suivi individualisé des compétences</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<header>
+  <nav class="green lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="center">Suivi individualisé des compétences.</a>
+      <ul id="nav-mobile" class="side-nav">
+      <li><a href="espace_etudiant.html" class="waves-effect waves-blue"><i class="green-text material-icons">home</i>Espace Etudiant</a></li>
+      <li><div class="divider"></a></li>
+      <li><a href="aide.html#situation" class="waves-effect waves-blue"><i class="green-text material-icons">help</i>Situation professionnelle</a></li>
+      <li class="active light-green"><a href="nouvelle_situation.html" class="waves-effect waves-teal">Nouvelle situation</a></li>
+      <li><a href="gestion_situation.html" class="waves-effect waves-teal">Gestion situations</a></li>
+      <li><div class="divider"></a></li>
+      <li><a href="aide.html#synthese" class="waves-effect waves-blue"><i class="green-text material-icons">help</i>Synthèse</a></li>
+      <li><a href="bilan_individuel.html" class="waves-effect waves-teal">Bilan individuel</a></li>
+      <li><a href="#" class="waves-effect waves-teal">Tableau de synthèse</a></li>
+      <li><div class="divider"></a></li>
+      <li><a href="aide.html#divers" class="waves-effect waves-blue"><i class="green-text material-icons">help</i>Divers</a></li>
+      <li><a href="sauvegarde.html" class="waves-effect waves-teal">Sauvegarde</a></li>
+      <li><a href="parametre.html" class="waves-effect waves-teal">Paramètres</a></li>
+      <li><a href="#" class="waves-effect waves-teal"><i class="green-text material-icons">feedback</i>Contact administrateur</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="row">
+    <div class="col s12">
+        <ul class="tabs">
+          <li class="tab col s3 green-text lighten-1"><a class="green-text lighten-1" target="_self" href="nouvelle_situation.html">Description</a></li>
+          <li class="tab col s2"><a class="active green-text lighten-1" target="_self" href="activite.html">Activité(s)</a></li>
+          <li class="tab col s2"><a class="green-text lighten-1" target="_self" href="reformulation.html">Reformulation(s)</a></li>
+          <li class="tab col s2"><a class="green-text lighten-1" target="_self" href="production.html">Production(s)</a></li>
+          <li class="tab col s2"><a class="green-text lighten-1" target="_self" href="commentaire.html">Commentaire(s) prof.</a></li>
+        </ul>
+      </div>
+</div>
+    <div class="row">
+      <div class="col s12">
+          <p class="light">Vous sélectionnez une ou plusieurs activités du référentiel dans la liste ci-dessous afin qu'elle(s) apparaisse(nt) dans la liste des "Activités mises en œuvre". Les compétences correspondantes sont alors indiquées dans la liste des "Compétences".</p>
+      </div>
+      <div class="input-field col s12">
+      <p>Activités du référentiel :</p>
+        <select multiple name="multiple" id="multiple" class="browser-default">
+          <optgroup label="A1 ------------">
+          <option value="1">A1.1.1 Analyse du cahier des charges d'un service à produire</option><option value="2">A1.1.2 Étude de l'impact de l'intégration d'un service sur le système informatique</option><option value="3">A1.1.3 Étude des exigences liées à la qualité attendue d'un service</option><option value="4">A1.2.1 Élaboration et présentation d'un dossier de choix de solution technique</option><option value="5">A1.2.2 Rédaction des spécifications techniques de la solution retenue (adaptation d'une solutio...</option><option value="6">A1.2.3 Évaluation des risques liés à l'utilisation d'un service</option><option value="7">A1.2.4 Détermination des tests nécessaires à la validation d'un service</option><option value="8">A1.2.5 Définition des niveaux d'habilitation associés à un service</option><option value="9">A1.3.1 Test d'intégration et d'acceptation d'un service</option><option value="10">A1.3.2 Définition des éléments nécessaires à la continuité d'un service</option><option value="11">A1.3.3 Accompagnement de la mise en place d'un nouveau service</option><option value="12">A1.3.4 Déploiement d'un service</option><option value="13">A1.4.1 Participation à un projet</option><option value="14">A1.4.2 Évaluation des indicateurs de suivi d'un projet et justification des écarts</option><option value="15">A1.4.3 Gestion des ressources</option>
+          </optgroup>
+          <optgroup label="A2 ------------">
+            <option value="17">A2.1.2 Évaluation et maintien de la qualité d'un service</option><option value="18">A2.2.1 Suivi et résolution d'incidents</option><option value="19">A2.2.2 Suivi et réponse à des demandes d'assistance</option><option value="20">A2.2.3 Réponse à une interruption de service</option><option value="21">A2.3.1 Identification, qualification et évaluation d'un problème</option><option value="22">A2.3.2 Proposition d'amélioration d'un service</option>
+          </optgroup>
+          <optgroup label="A3 ------------"><option value="23">A3.1.1 Proposition d'une solution d'infrastructure</option><option value="24">A3.1.2 Maquettage et prototypage d'une solution d'infrastructure</option><option value="25">A3.1.3 Prise en compte du niveau de sécurité nécessaire à une infrastructure</option><option value="26">A3.2.1 Installation et configuration d'éléments d'infrastructure</option><option value="27">A3.2.2 Remplacement ou mise à jour d'éléments défectueux ou obsolètes</option><option value="28">A3.2.3 Mise à jour de la documentation technique d'une solution d'infrastructure</option><option value="29">A3.3.1 Administration sur site ou à distance des éléments d'un réseau, de serveurs, de servic...</option><option value="30">A3.3.2 Planification des sauvegardes et gestion des restaurations</option><option value="31">A3.3.3 Gestion des identités et des habilitations</option><option value="32">A3.3.4 Automatisation des tâches d'administration</option><option value="33">A3.3.5 Gestion des indicateurs et des fichiers d'activité</option>
+          </optgroup>
+          <optgroup label="A4 ------------" ><option value="34">A4.1.1 Proposition d'une solution applicative</option><option value="35">A4.1.2 Conception ou adaptation de l'interface utilisateur d'une solution applicative</option><option value="36">A4.1.3 Conception ou adaptation d'une base de données</option><option value="37">A4.1.4 Définition des caractéristiques d'une solution applicative</option><option value="38">A4.1.5 Prototypage de composants logiciels</option><option value="39">A4.1.6 Gestion d'environnements de développement et de test</option><option value="40">A4.1.7 Développement, utilisation ou adaptation de composants logiciels</option><option value="41">A4.1.8 Réalisation des tests nécessaires à la validation d'éléments adaptés ou développés</option><option value="42">A4.1.9 Rédaction d'une documentation technique</option><option value="43">A4.1.10 Rédaction d'une documentation d'utilisation</option><option value="44">A4.2.1 Analyse et correction d'un dysfonctionnement, d'un problème de qualité de service ou de ...</option><option value="45">A4.2.2 Adaptation d'une solution applicative aux évolutions de ses composants</option><option value="46">A4.2.3 Réalisation des tests nécessaires à la mise en production d'éléments mis à jour</option><option value="47">A4.2.4 Mise à jour d'une documentation technique</option>
+          </optgroup>
+          <optgroup label="A5 ------------"><option value="48">A5.1.1 Mise en place d'une gestion de configuration</option><option value="49">A5.1.2 Recueil d'informations sur une configuration et ses éléments</option><option value="50">A5.1.3 Suivi d'une configuration et de ses éléments</option><option value="51">A5.1.4 Étude de propositions de contrat de service (client, fournisseur)</option><option value="52">A5.1.5 Évaluation d'un élément de configuration ou d'une configuration</option><option value="53">A5.1.6 Évaluation d'un investissement informatique</option><option value="54">A5.2.1 Exploitation des référentiels, normes et standards adoptés par le prestataire informati...</option><option value="55">A5.2.2 Veille technologique</option><option value="56">A5.2.3 Repérage des compléments de formation ou d'auto-formation utiles à l'acquisition de nou...</option><option value="57">A5.2.4 Étude d‘une technologie, d'un composant, d'un outil ou d'une méthode</option></optgroup>
+        </select>
+        <p>En sélectionnant une ou plusieurs des activités ci-dessous, vous mettez en évidence les compétences correspondantes. Le bouton "Supprimer" permet éventuellement de retirer la(les) activité(s) de cette liste.</p>
+      </div>
+      </div>
+      <div class="input-field col s12">
+      <p>Activités mises en oeuvre :</p>
+        <select class="browser-default" multiple name="" id="">
+          <option value="1">A1.4.1 Participation à un projet</option>
+          <option value="2">A.4.1.3 Conception ou adaptation d'une base de données</option>
+          <option value="3">A4.1.7 Développement, utilisation ou adaptation de composants</option>
+        </select>
+        </div>
+        <div class="input-field col s12">
+            <p class="center-align"><input type="button" value="Supprimer" class="btn waves-effect waves-light red" onclick="enleve();"/></p>
+        </div>
+        <div class="col s12">
+          <p>Les compétences apparaissant dans la liste ci-dessous correspondent aux activités mises en œuvre dans la situation. Le contenu de cette liste est géré automatiquement (ajout, suppression, sélection).</p>
+        </div>
+        <div class="col s12 l6">
+          <p>Compétences :</p>
+          <select name="" id="" disabled>
+            <option value="">C1.1.1.1 Recenser et caractériser les contextes d'utilisation, les processus et les acteurs sur lesquels le service à produire aura un impact</option>
+            <option value="">C1.1.1.2 Identifier les fonctionnalités attendues du service à produire</option>
+            <option value="">C1.1.1.3 Préparer sa participation à une réunion</option>
+            <option value="">C1.1.2.1 Analyser les interactions entre services</option>
+          </select>
+        </div>
+      </div>
+    </div>
+</main>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/materialize.min.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
